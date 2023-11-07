@@ -18,7 +18,7 @@ package org.modeshape.webdav;
 
 import java.io.File;
 import java.lang.reflect.Constructor;
-import javax.servlet.ServletException;
+import jakarta.servlet.ServletException;
 import org.modeshape.webdav.exceptions.WebdavException;
 
 /**

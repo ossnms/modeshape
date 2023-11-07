@@ -16,7 +16,7 @@
 package org.modeshape.jcr.api;
 
 import javax.jcr.Credentials;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /**
  * A {@link Credentials} implementation that assumes servlet-based authentication and provides authorization through the

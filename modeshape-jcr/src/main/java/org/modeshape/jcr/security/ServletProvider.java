@@ -17,7 +17,7 @@ package org.modeshape.jcr.security;
 
 import java.util.Map;
 import javax.jcr.Credentials;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import org.modeshape.jcr.ExecutionContext;
 import org.modeshape.jcr.api.ServletCredentials;
 
