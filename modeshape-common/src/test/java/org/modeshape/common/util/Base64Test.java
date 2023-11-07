@@ -25,7 +25,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
-import javax.xml.bind.DatatypeConverter;
 import org.junit.Test;
 import org.modeshape.common.FixFor;
 
@@ -116,7 +115,7 @@ public class Base64Test {
             }                        
         }
         // until Java 8, use this....
-        String expectedString = DatatypeConverter.printBase64Binary(IoUtil.readBytes(resource.openStream()));
+        String expectedString = java.util.Base64.getEncoder().encodeToString(IoUtil.readBytes(resource.openStream()));
         assertEquals("Incorrect Base64 encoding", expectedString, new String(bos.toByteArray()));
     }
 }

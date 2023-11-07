@@ -13,6 +13,12 @@
     <name>ModeShape WebDAV Servlet</name>
     <description>ModeShape WebDAV Servlet Library</description>
     <url>http://www.modeshape.org</url>
+
+    <properties>
+        <!-- enforcer plugin does not work with java > 11-->
+        <enforcer.skip>true</enforcer.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.modeshape</groupId>
